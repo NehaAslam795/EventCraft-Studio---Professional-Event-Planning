@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Event<span>Craft</span> Studio</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="booking.html" class="btn">Get Quote</a></li>
+                </ul>
+                <div class="mobile-menu">☰</div>
+            </nav>
+        </div>
+    </header>
+
+  
+    
+    <!-- Packages Section -->
+    <section class="section" style="background-color: var(--light-color);">
+        <div class="container">
+            <h2 class="section-title">Our Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-badge">Popular</div>
+                    <div class="package-header">
+                        <h3>Silver Package</h3>
+                        <div class="package-price">$499</div>
+                        <p>Perfect for small gatherings</p>
+                    </div>
+                    <ul class="package-features">
+                        <li>Up to 50 guests</li>
+                        <li>Basic decoration</li>
+                        <li>3-hour photography</li>
+                        <li>Standard cake</li>
+                        <li>Basic sound system</li>
+                    </ul>
+                    <div class="package-footer">
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Gold Package</h3>
+                        <div class="package-price">$899</div>
+                        <p>Ideal for medium events</p>
+                    </div>
+                    <ul class="package-features">
+                        <li>Up to 100 guests</li>
+                        <li>Premium decoration</li>
+                        <li>5-hour photography</li>
+                        <li>Custom cake design</li>
+                        <li>DJ services included</li>
+                    </ul>
+                    <div class="package-footer">
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Platinum Package</h3>
+                        <div class="package-price">$1499</div>
+                        <p>For grand celebrations</p>
+                    </div>
+                    <ul class="package-features">
+                        <li>Up to 200 guests</li>
+                        <li>Luxury decoration</li>
+                        <li>Full-day photography</li>
+                        <li>Premium cake & catering</li>
+                        <li>Live entertainment</li>
+                    </ul>
+                    <div class="package-footer">
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>EventCraft Studio</h3>
+                    <p>Creating unforgettable events with precision and creativity. Let us handle the details while you enjoy your special moments.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Get Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="service-birthday.html">Birthday Planning</a></li>
+                        <li><a href="service-wedding.html">Wedding Decoration</a></li>
+                        <li><a href="service-corporate.html">Corporate Events</a></li>
+                        <li><a href="service-photography.html">Photography</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉ info@eventcraft.com</li>
+                        <li>📍 123 Event Street, City, State 12345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 EventCraft Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form submission handler
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your booking request! We will contact you shortly to discuss your event.');
+            // In a real implementation, this would submit to a server
+            // For this demo, we'll just show an alert
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

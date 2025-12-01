@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">Event<span>Craft</span> Studio</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="booking.html" class="btn">Get Quote</a></li>
+                </ul>
+                <div class="mobile-menu">☰</div>
+            </nav>
+        </div>
+    </header>
+
+  
+        <!-- Services Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎂</div>
+                    <h3>Birthday Planning</h3>
+                    <p>Themed parties for all ages with decorations, cakes, and entertainment.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💒</div>
+                    <h3>Wedding Decoration</h3>
+                    <p>Beautiful stage designs, floral arrangements, and lighting for your special day.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Corporate Events</h3>
+                    <p>Professional setups for seminars, conferences, and corporate gatherings.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📸</div>
+                    <h3>Photography</h3>
+                    <p>Capture your special moments with our professional photography services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>EventCraft Studio</h3>
+                    <p>Creating unforgettable events with precision and creativity. Let us handle the details while you enjoy your special moments.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Get Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="service-birthday.html">Birthday Planning</a></li>
+                        <li><a href="service-wedding.html">Wedding Decoration</a></li>
+                        <li><a href="service-corporate.html">Corporate Events</a></li>
+                        <li><a href="service-photography.html">Photography</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉ info@eventcraft.com</li>
+                        <li>📍 123 Event Street, City, State 12345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 EventCraft Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form submission handler
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your booking request! We will contact you shortly to discuss your event.');
+            // In a real implementation, this would submit to a server
+            // For this demo, we'll just show an alert
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
